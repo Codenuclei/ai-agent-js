@@ -18,7 +18,7 @@ export async function POST(req) {
         const { question } = await req.json();
         // Set up the AI model (Ollama) with specific configurations
         const model = new Ollama({
-            model: "codeqwen",
+            model: "dolphin3:latest",
             baseUrl: "http://localhost:11434",
             stream: true,
         });
